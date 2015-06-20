@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Error","Encapsulates all the types of errors this crate can produce."]]});

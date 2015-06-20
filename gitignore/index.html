@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `gitignore` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, gitignore">
+
+    <title>gitignore - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'gitignore', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>gitignore</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/gitignore/lib.rs.html#1-25'>[src]</a></span></h1>
+<div class='docblock'><p>Support for loading, parsing and matching paths against the rules in a `<code>.gitignore</code> file.</p>
+
+<p>This create has been specifically crafted to have no dependencies on Git itself - all you need
+is a directory with a `<code>.gitignore</code> file in it, and a path you want to check is excluded by
+some rule in the file.</p>
+
+<p>All of the patterns described in the <a href="https://www.kernel.org/pub/software/scm/git/docs/gitignore.html">man page for the .gitignore format</a>,
+(specifically, in the <a href="https://www.kernel.org/pub/software/scm/git/docs/gitignore.html#_pattern_format">&quot;Pattern Format&quot; section</a>)
+are implemented. This crate currently does not support auto-loading patterns from
+<code>$GIT_DIR/info/exclude</code> or from the file specified by the Git configuration variable
+<code>core.excludesFile</code> (the user excludes file); rather, it will only load patterns specified in
+the <code>.gitignore</code> file in the given directory.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Error.html'
+                               title='gitignore::Error'>Error</a></td>
+                        <td class='docblock short'><p>Encapsulates all the types of errors this crate can produce.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.File.html'
+                               title='gitignore::File'>File</a></td>
+                        <td class='docblock short'><p>Represents a <code>.gitignore</code> file. Use this to load the <code>.gitignore</code> file, parse the patterns,
+and then check if a given path would be excluded by any rules contained therein.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Pattern.html'
+                               title='gitignore::Pattern'>Pattern</a></td>
+                        <td class='docblock short'><p>A pattern as found in a <code>.gitignore</code> file.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "gitignore";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

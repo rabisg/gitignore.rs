@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Pattern","A pattern as found in a `.gitignore` file."]]});

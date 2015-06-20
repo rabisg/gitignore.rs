@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["main","Given a list of files, check the status of these files and whether they are excluded because of the .gitignore rules in the current working directory."]]});
