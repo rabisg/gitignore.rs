@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="API stability overview for the Rust `gitignore` crate.">
-    <meta name="keywords" content="rust, rustlang, rust-lang">
+    <meta name="description" content="API documentation for the Rust `link` fn in crate `build`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, link">
 
-    <title>gitignore - Stability dashboard</title>
+    <title>build::link - Rust</title>
 
     <link rel="stylesheet" type="text/css" href="../main.css">
 
@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         
-        <p class='location'></p><script>window.sidebarCurrent = {name: 'gitignore', ty: 'mod', relpath: '../'};</script>
+        <p class='location'><a href='index.html'>build</a></p><script>window.sidebarCurrent = {name: 'link', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </section>
 
     <nav class="sub">
@@ -40,18 +40,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod"><h1 class='fqn'>Stability dashboard: crate <a class='mod' href='index.html'>gitignore</a></h1>
-This dashboard summarizes the stability levels for all of the public modules of
-the crate, according to the total number of items at each level in the module and
-its children (percentages total for gitignore):
-<blockquote>
-<a class='stability Stable'></a> stable (41%),<br/>
-<a class='stability Unstable'></a> unstable (0%),<br/>
-<a class='stability Deprecated'></a> deprecated (0%),<br/>
-<a class='stability Unmarked'></a> unmarked (58%)
-</blockquote>
-The counts do not include methods or trait
-implementations that are visible only through a re-exported type.<table><tr><td><a href='index.html'>gitignore</a></td><td class='summary-column'><span class='summary Stable' style='width: 41.1765%; display: inline-block'>&nbsp</span><span class='summary Unstable' style='width: 0.0000%; display: inline-block'>&nbsp</span><span class='summary Deprecated' style='width: 0.0000%; display: inline-block'>&nbsp</span><span class='summary Unmarked' style='width: 58.8235%; display: inline-block'>&nbsp</span></td></tr></table></section>
+    <section id='main' class="content fn">
+<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>build</a>::<wbr><a class='fn' href=''>link</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-4' class='srclink' href='../src/build/lib.rs.html#3-14' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn link(name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, bundled: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</pre></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -84,6 +79,10 @@ implementations that are visible only through a re-exported type.<table><tr><td>
                 <code>trait</code>, <code>typedef</code> (or
                 <code>tdef</code>).
             </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
         </div>
     </div>
 
@@ -91,7 +90,7 @@ implementations that are visible only through a re-exported type.<table><tr><td>
 
     <script>
         window.rootPath = "../";
-        window.currentCrate = "gitignore";
+        window.currentCrate = "build";
         window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>

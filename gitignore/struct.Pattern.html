@@ -41,9 +41,11 @@
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>gitignore</a>::<wbr><a class='struct' href=''>Pattern</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-520' href='../src/gitignore/pattern.rs.html#9-21'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>gitignore</a>::<wbr><a class='struct' href=''>Pattern</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-713' class='srclink' href='../src/gitignore/pattern.rs.html#9-21' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Pattern&lt;'c&gt; {
     pub pattern: <a class='struct' href='../glob/struct.Pattern.html' title='glob::Pattern'>Pattern</a>,
     pub anchored: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>,
@@ -51,17 +53,20 @@
     // some fields omitted
 }</pre><div class='docblock'><p>A pattern as found in a <code>.gitignore</code> file.</p>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.pattern'><a class='stability Unmarked' title='No stability level'></a><code>pattern</code></td><td><div class='docblock'><p>The glob pattern after being parsed, negation or trailing directory slashes removed,
+<table><tr class='stab '>
+                                  <td id='structfield.pattern'><code>pattern</code></td><td><div class='docblock'><p>The glob pattern after being parsed, negation or trailing directory slashes removed,
 and the root prepended if anchored.</p>
-</div></td></tr><tr><td id='structfield.anchored'><a class='stability Unmarked' title='No stability level'></a><code>anchored</code></td><td><div class='docblock'><p>Whether the pattern had the root prepended so the matches must be within the root
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.anchored'><code>anchored</code></td><td><div class='docblock'><p>Whether the pattern had the root prepended so the matches must be within the root
 directory. That is to say, whether the pattern was anchored to the root.</p>
-</div></td></tr><tr><td id='structfield.negation'><a class='stability Unmarked' title='No stability level'></a><code>negation</code></td><td><div class='docblock'><p>Whether the pattern should, if it matches, negate any previously matching patterns. This
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.negation'><code>negation</code></td><td><div class='docblock'><p>Whether the pattern should, if it matches, negate any previously matching patterns. This
 flag has no effect if no previous patterns had matched.</p>
-</div></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'c&gt; <a class='struct' href='../gitignore/struct.Pattern.html' title='gitignore::Pattern'>Pattern</a>&lt;'c&gt;</code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(raw_pattern: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, root: &amp;'c <a class='struct' href='http://doc.rust-lang.org/nightly/std/path/struct.Path.html' title='std::path::Path'>Path</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../gitignore/struct.Pattern.html' title='gitignore::Pattern'>Pattern</a>&lt;'c&gt;, <a class='struct' href='../gitignore/struct.Error.html' title='gitignore::Error'>Error</a>&gt;</code></h4>
+</div></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'c&gt; <a class='struct' href='../gitignore/struct.Pattern.html' title='gitignore::Pattern'>Pattern</a>&lt;'c&gt;</code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(raw_pattern: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, root: &amp;'c <a class='struct' href='http://doc.rust-lang.org/nightly/std/path/struct.Path.html' title='std::path::Path'>Path</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../gitignore/struct.Pattern.html' title='gitignore::Pattern'>Pattern</a>&lt;'c&gt;, <a class='struct' href='../gitignore/struct.Error.html' title='gitignore::Error'>Error</a>&gt;</code></h4>
 <div class='docblock'><p>Create a new pattern from the raw glob as found in a <code>.gitignore</code> file.</p>
 
 <p>The value of <code>root</code> must be an absolute path.</p>
-</div><h4 id='method.is_excluded' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.is_excluded' class='fnname'>is_excluded</a>(&amp;self, path: &amp;<a class='struct' href='http://doc.rust-lang.org/nightly/std/path/struct.Path.html' title='std::path::Path'>Path</a>, directory: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h4 id='method.is_excluded' class='method'><code>fn <a href='#method.is_excluded' class='fnname'>is_excluded</a>(&amp;self, path: &amp;<a class='struct' href='http://doc.rust-lang.org/nightly/std/path/struct.Path.html' title='std::path::Path'>Path</a>, directory: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
 <div class='docblock'><p>Returns true if the given path is matched by the current pattern, and hence would be
 excluded if found in a <code>.gitignore</code> file. The second argument, <code>directory</code>, is a <code>bool</code>
 representing whether the given path is a directory - if so, it should be set to <code>true</code>,
@@ -72,7 +77,7 @@ return the opposite value, eg. <code>false</code> if the pattern matched, and <c
 did not match.</p>
 
 <p>The value of <code>path</code> must be an absolute path.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'c&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../gitignore/struct.Pattern.html' title='gitignore::Pattern'>Pattern</a>&lt;'c&gt;</code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl&lt;'c&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../gitignore/struct.Pattern.html' title='gitignore::Pattern'>Pattern</a>&lt;'c&gt;</code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
@@ -105,6 +110,10 @@ did not match.</p>
                 <code>struct</code>, <code>enum</code>,
                 <code>trait</code>, <code>typedef</code> (or
                 <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
             </p>
         </div>
     </div>
